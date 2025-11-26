@@ -45,7 +45,7 @@ const Navbar = () => {
          <div className="dashboarmenu">
             <ul>
                 <li ><Link className='flex gap-4 items-center font-var w-[206px] h-[56px]  text-[#FFFFFF] bg-[#7364DB] rounded-[12px]     font-family: "Poppins", sans-serif;
-'  to={"#"}><span><img src="logoone.png" alt="messagelogo" />
+'  to={"/dashboard"}><span><img src="logoone.png" alt="messagelogo" />
 </span> Dashboard</Link></li>
                 <li ><Link className='flex gap-4 items-center font-semibold text-[14px]'  to={"#"}><span><img src="shop.png" alt="product_iamge" />
 </span> Products</Link></li>
