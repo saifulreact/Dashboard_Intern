@@ -30,7 +30,7 @@ const Dashboard = () => {
   ];
   return (
     <>
-    <div className="main_div">
+    <div className="main_div w-full">
       <div className="container">
         <div className="main_row">
           {/* ------------------- header part start --------------------------- */}

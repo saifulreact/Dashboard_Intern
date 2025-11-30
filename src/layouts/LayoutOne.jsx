@@ -7,9 +7,18 @@ const LayoutOne = () => {
   return (
     <>
     
-   <Navbars/>
-   {/* <Navbar/> */}
+   <div className="">
+
+      <Navbars/>
+    
+    
+   <div className="flex">
+    <Navbar/>
     <Outlet/>
+   </div>
+
+
+   </div>
       
     </>
   )
