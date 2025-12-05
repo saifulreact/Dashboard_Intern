@@ -17,16 +17,16 @@ import { FaToggleOn } from "react-icons/fa";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 import { LiaToggleOnSolid } from "react-icons/lia";
 import { IoIosArrowDropleft } from "react-icons/io";
+import { FaCirclePlus } from "react-icons/fa6";
+
 
 const Navbar = () => {
     return (
         <nav className='pl-[17px]'>
-            <div className="main_div flex flex-col gap-[18px]">
+            <div className="main_div flex flex-col gap-[18px] ">
                 <div className="logo_col">
                     <div className='flex justify-between w-[256px] items-center'>
-                        <div className="logo">
-                            <h1>h</h1>
-                        </div>
+
                         <div className="icon">
                             <span><IoIosArrowDropleft />
                             </span>
@@ -35,19 +35,19 @@ const Navbar = () => {
                 </div>
                 <div className="dashboarmenu">
                     <ul>
-                        <li ><Link className='flex gap-4 items-center font-var w-[206px] h-[56px]  text-[#FFFFFF] bg-[#7364DB] rounded-[12px]     font-family: "Poppins", sans-serif;
+                        <li ><Link className='flex gap-4 items-center font-var w-[206px] h-14  text-[#FFFFFF] bg-[#7364DB] rounded-[12px]     font-family: "Poppins", sans-serif;
 '  to={"/dashboard"}><span><img src="logoone.png" alt="messagelogo" />
                             </span> Dashboard</Link></li>
-                        <li ><Link className='flex gap-4 items-center font-semibold text-[14px]' to={"#"}><span><img src="shop.png" alt="product_iamge" />
+                        <li ><Link className='flex gap-4 items-center font-semibold text-[14px]' to={"product"}><span><img src="shop.png" alt="product_iamge" />
                         </span> Products</Link></li>
-                        <li ><Link className='flex gap-4 items-center items-center w-[206px] h-[56px]' to={"#"}><span><FaMessage />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"order"}><span><FaMessage />
 
                         </span> Orders</Link></li>
-                        <li ><Link className='flex gap-4 items-center items-center w-[206px] h-[56px]' to={"#"}><span><MdOutlinePayment />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"payment"}><span><MdOutlinePayment />
                         </span> Payments</Link></li>
-                        <li ><Link className='flex gap-4 items-center items-center w-[206px] h-[56px] ' to={"#"}><span><AiOutlineTransaction />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14 ' to={"tranjection"}><span><AiOutlineTransaction />
                         </span> Transactions</Link></li>
-                        <li ><Link className='flex gap-4 items-center ' to={"#"}><span><IoIosPerson />
+                        <li ><Link className='flex gap-4 items-center ' to={"client"}><span><IoIosPerson />
                         </span> Clients</Link></li>
                     </ul>
                 </div>
@@ -63,15 +63,35 @@ const Navbar = () => {
                         <li><Link className='flex font-medium text-[12px] text-[#171721] gap-2 items-center'><span className='w-4 h-4'><FiPlusSquare /></span> Add category</Link></li>
                     </ul>
                 </div>
-                <div className='w-[206px] h-[2px] my-5 bg-[#E8EDF2]'></div>
+                <div className='w-[206px] h-0.5 my-5 bg-[#E8EDF2]'></div>
             </div>
             <div className='font-medium text-[#8083A3] text-[12px]'>
                 <p>Top Sellers</p>
             </div>
 
+            <div className='flex gap-[-20px]'>
+                <div className="single_person">
+                    <img src="person.png" alt="person_images" />
+                </div>
+                <div className="single_person">
+                    <img src="person.png" alt="person_images" />
+                </div>
+
+                <div className="single_person">
+                    <img src="person.png" alt="person_images" />
+                </div>
+                <div className="single_person">
+                    <img src="person.png" alt="person_images" />
+                </div>
+                <div className="single_cart w-9 h-9 flex justify-center items-center bg-[#7364DB] rounded-full">
+                    <span><FaCirclePlus /></span>
+
+                </div>
+            </div>
+
             {/* lotti part start */}
 
-            <div className='lotti_part w-[206px] py-5 px-[31px] my-8 '>
+            <div className='lotti_part w-[206px] py-5 px-[31px] my-8 h-screen'>
                 <Lottie animationData={animation} />
                 <div className='text_part_start w-[150px]'>
                     <p>Unlock more information now

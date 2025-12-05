@@ -32,7 +32,7 @@ const Navbars = () => {
 <div className='flex'>
     
               <div className="search">
-                <div className='w-[360px] h-12 bg-[#C6CBD9] ml-8 rounded-[12px] flex justify-between'>
+                <div className='w-[360px] h-12 bg-[#C6CBD9] ml-8 rounded-xl flex justify-between'>
                 <div className='flex pl-2'>
                         <span className=' flex items-center mr-2 '><VscSearch /> </span>
                     <input type="text"  placeholder='Search ' className='outline-none w-full h-full'  />
