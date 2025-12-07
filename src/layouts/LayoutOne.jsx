@@ -2,24 +2,23 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
 import Navbars from '../components/main_nav/Navbars'
+import Footer from '../components/footer/Footer'
 
 const LayoutOne = () => {
   return (
     <>
-    
-   <div className="">
+      <div className="">
+        <Navbars/>
 
-      <Navbars/>
-    
-    
-   <div className="flex">
-    <Navbar/>
-    <Outlet/>
-   </div>
+        {/* Main Layout */}
+        <div className="flex">
+          <Navbar/>
+          <Outlet/>
+        </div>
 
-
-   </div>
-      
+        {/* Footer should be here */}
+        <Footer/>
+      </div>
     </>
   )
 }

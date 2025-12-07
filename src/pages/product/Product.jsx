@@ -10,6 +10,8 @@ import { GoDotFill } from "react-icons/go";
 import { FaStar } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 
 
 
@@ -625,6 +627,23 @@ const Product = () => {
                       <span className='text-[#7E7E8F]'><BsThreeDots /></span>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="bottom_row w-1/2 mt-[52px] pb-12">
+              <div className='flex  gap-[111px] items-center'>
+                <div className='flex gap-5 '>
+                  <h2 className='w-10 h-10 bg-[#7364DB] flex justify-center items-center rounded-lg'>1</h2>
+                 <div className='flex gap-9 items-center font-poppin font-semibold text-[#07070C] text-[12px]'>
+                   <h2>2</h2>
+                  <h2>3</h2>
+                  <h2>4</h2>
+                  <h2>5</h2>
+                 </div>
+                </div>
+                <div className=' gap-5 w-[82px] h-10 bg-[#E8EDF2] border-2 border-solid border-[#E8EDF2] rounded-md flex justify-center items-center'>
+                  <p className='font-poppin font-semibold text-[12px] text-[#9A9AAF]'>Next</p>
+                  <span><IoIosArrowRoundForward /></span>
                 </div>
               </div>
             </div>
