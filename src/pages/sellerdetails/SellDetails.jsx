@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../components/header/Header'
+import Body from '../../components/body/Body'
 
 const SellDetails = () => {
   return (
@@ -7,10 +8,13 @@ const SellDetails = () => {
     <div className="main_div">
         <div className="container">
             <div className="core_rwo">
-                <Header/>
+              
+                <Body/>
                 
             </div>
-            <div className="body_part_start"></div>
+            <div className="body_part_start">
+              <p>lorem100</p>
+            </div>
         </div>
     </div>
       
