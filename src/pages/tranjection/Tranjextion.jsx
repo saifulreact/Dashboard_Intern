@@ -8,6 +8,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { LiaFilterSolid } from "react-icons/lia";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaRegSquare } from "react-icons/fa";
+
 
 
 const Tranjextion = () => {
@@ -62,6 +64,26 @@ const Tranjextion = () => {
                     <h4 className='font-poppin font-semibold text-[16px] text-[#07070C]'>Pending transactions</h4>
                     <span className='text-[#9A9AAF]'><BsThreeDotsVertical />
 </span>
+                  </div>
+                  {/* line_part_start */}
+                  <div className='flex justify-between'>
+                    <div className='flex gap-[76px]'>
+                     <div className='flex gap-[26px] '>
+                       <span><FaRegSquare /></span>
+                      <p>Order ID</p>
+
+                     </div>
+                     <div>
+                      <p>Paid</p>
+                     </div>
+
+                    </div>
+                    <div className='flex  justify-between'>
+                      <p>Payment Method</p>
+                      <p>Date</p>
+                      <p>Status</p>
+                      <p>Actions</p>
+                    </div>
                   </div>
 
                  </section>

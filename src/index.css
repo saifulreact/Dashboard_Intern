@@ -23,5 +23,8 @@
 }
 
 body{
-  background: #98a1fe;
+  background: #98feb3;
+}
+.head_row{
+  @apply font-poppin font-bold text-[28px] text-[#07070C]
 }
