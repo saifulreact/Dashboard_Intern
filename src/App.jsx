@@ -10,6 +10,11 @@ import Client from "./pages/clientpage/Client"
 import Tranjextion from "./pages/tranjection/Tranjextion"
 import Header from "./components/header/Header"
 import OrderDetails from "./pages/orderdetails/OrderDetails"
+import Login from "./pages/Authentication/login/Login"
+import Registration from "./pages/registration/Registration"
+import Almostdone from "./pages/Authentication/Almostdone"
+import Resetpass from "./pages/Authentication/Resetpass"
+import Admin from "./pages/Authentication/Admin"
 
 function App() {
   const myroute=createBrowserRouter(
@@ -27,6 +32,12 @@ function App() {
         <Route path="seller" element={<Header/>}/>
         <Route path="orderdetails" element={<OrderDetails/>}/>
         </Route>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/registration" element={<Registration/>}/>
+        <Route path="/done" element={<Almostdone/>}/>
+        <Route path="/resetpass" element={<Resetpass/>}/>
+        <Route path="/admin" element={<Admin/>}/>
+
       </Route>
     )
   )
