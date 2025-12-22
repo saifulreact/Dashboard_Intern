@@ -8,7 +8,7 @@ const SellDetails = () => {
     <div className="main_div">
         <div className="container">
             <div className="core_rwo">
-              
+              <h1>hello </h1>
                 <Body/>
                 
             </div>

@@ -51,7 +51,7 @@ const data = [
 // #endregion
 const Home = () => {
   return (
- <div className="main_div flex items-center justify-center min-h-[100vh] bg-amber-200">
+ <div className="main_div flex items-center justify-center min-h-screen bg-amber-200">
 
 <div className="container">
     <div className="one w-1/3">
@@ -80,7 +80,7 @@ const Home = () => {
 
           </div>
 
-          <div className='w-[265px] h-[103px] bg-[#E8EDF2] rounded-[16px]'>
+          <div className='w-[265px] h-[103px] bg-[#E8EDF2] rounded-2xl'>
             <div className="inside_div">
               <div className="toe flex justify-between">
                 <p className='text-[#000000] textf-[14px] font-poppin'>Total sells</p>

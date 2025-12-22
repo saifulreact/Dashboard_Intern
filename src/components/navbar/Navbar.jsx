@@ -35,19 +35,19 @@ const Navbar = () => {
                 </div>
                 <div className="dashboarmenu">
                     <ul>
-                        <li ><Link className='flex gap-4 items-center font-var w-[206px] h-14  text-[#FFFFFF] bg-[#7364DB] rounded-[12px]     font-family: "Poppins", sans-serif;
-'  to={"/dashboard"}><span><img src="logoone.png" alt="messagelogo" />
+                        <li ><Link className='flex gap-4 items-center font-var w-[206px] h-14  text-[#FFFFFF] bg-[#7364DB] rounded-xl    font-family: "Poppins", sans-serif;
+'  to={"/dashboard"}><span className='pl-4.5'><img src="logoone.png" alt="messagelogo" />
                             </span> Dashboard</Link></li>
-                        <li ><Link className='flex gap-4 items-center font-semibold text-[14px]' to={"product"}><span><img src="shop.png" alt="product_iamge" />
+                        <li ><Link className='flex gap-4 items-center font-semibold text-[14px]' to={"product"}><span className='pl-4.5'><img src="shop.png" alt="product_iamge" />
                         </span> Products</Link></li>
-                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"order"}><span><FaMessage />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"order"}><span className='pl-4.5'><FaMessage />
 
                         </span> Orders</Link></li>
-                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"payment"}><span><MdOutlinePayment />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14' to={"payment"}><span className='pl-4.5'><MdOutlinePayment />
                         </span> Payments</Link></li>
-                        <li ><Link className='flex gap-4  items-center w-[206px] h-14 ' to={"tranjection"}><span><AiOutlineTransaction />
+                        <li ><Link className='flex gap-4  items-center w-[206px] h-14 ' to={"tranjection"}><span className='pl-4.5'><AiOutlineTransaction />
                         </span> Transactions</Link></li>
-                        <li ><Link className='flex gap-4 items-center ' to={"client"}><span><IoIosPerson />
+                        <li ><Link className='flex gap-4 items-center ' to={"client"}><span className='pl-4.5'><IoIosPerson />
                         </span> Clients</Link></li>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Product.css"
 import { TiHomeOutline } from "react-icons/ti";
 import { IoIosArrowForward } from "react-icons/io";
@@ -11,6 +11,7 @@ import { FaStar } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Gride from '../../components/gride/Gride';
 
 
 
@@ -20,6 +21,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 const Product = () => {
+  const [isGrid, setIsGrid] = useState("grid")
+  console.log(isGrid)
   return (
     <>
 
@@ -48,18 +51,20 @@ const Product = () => {
       </div></div>
       <div className='w-[154px] h-[46px] rounded-tl-2xl flex justify-between  items-center     rounded-bl-2xl bg-[#E8EDF2]'>
         <div className='p-2 w-1/2'>
-       <Link to={"#"}><span><CiGrid2H /></span></Link>
-        <p className='font-poppin font-normal text-[12px] leading-4 '>List</p>
+       <button onClick={()=> setIsGrid("list")}><span><CiGrid2H /></span><p className='font-poppin font-normal text-[12px] leading-4 '>List</p></button>
+        
         </div>
-        <div className='w-1/2'>
+        <button onClick={()=> setIsGrid("grid")} className='w-1/2'>
         <span><CiGrid41 />
         </span>
         <p className='font-poppin font-normal text-[12px] leading-4 '>Grid</p>
-        </div>
+        </button>
       </div>
      </div>
         </div>
-
+{
+  isGrid ? <Gride/> : <list />
+}
           <div className="main_part_start w-[1136px]  p-6 bg-[#ffffff]  rounded-2xl">
               <div>
                 <div className="header_row flex w-full justify-between">
