@@ -6,13 +6,13 @@ import { GoDotFill } from "react-icons/go";
 
 
 const SingleGride = () => {
-    const singleProduct=useState([
-        product:image,
-        name:"sdaflk",
-        productdescription:"adfslkj",
-        icon:"ljk",
-        "ion"
-    ])
+    // const singleProduct=useState([
+    //     product:image,
+    //     name:"sdaflk",
+    //     productdescription:"adfslkj",
+    //     icon:"ljk",
+    //     "ion"
+    // ])
   return (
     <>
     <div className="container">
